@@ -1,6 +1,7 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 
@@ -15,7 +16,17 @@ This project is my first time using Django. It is intended to be a cms web appli
 <p>Scorpion CMS has SSH compatibility so you can access your application securely over any network.</p>
 </ol>
 <div style="margin-left:200px">
-<button>Screenshots</button></div>
+<button id="p">Screenshots</button>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).toggle();
+        alert("This button works!");
+    });
+});
+</script>
+</div>
 <hr>
 
        
